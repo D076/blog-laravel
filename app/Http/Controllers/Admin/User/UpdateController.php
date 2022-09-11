@@ -12,6 +12,6 @@ class UpdateController extends Controller
     {
         $data = $request->validated();
         $user->update($data);
-        return view('admin.user.show', compact('user'));
+        return redirect()->route('admin.user.show', $user);
     }
 }
