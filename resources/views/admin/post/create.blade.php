@@ -22,13 +22,13 @@
                     <div class="col-12">
                         <form action="{{ route('admin.post.store') }}" method="POST" enctype="multipart/form-data">
                             @csrf
-                            <div class="form-group w-25">
+                            <div class="form-group w-75">
                                 <input type="text" class="form-control" name="title" placeholder="Название поста" required value="{{ old('title') }}">
                             </div>
-                            <div class="form-group w-50">
+                            <div class="form-group w-75">
                                 <textarea class="form-control" name="content" required>{{ old('content') }}</textarea>
                             </div>
-                            <div class="form-group w-50">
+                            <div class="form-group w-75">
                                 <label for="exampleInputFile">Добавить превью</label>
                                 <div class="input-group">
                                     <div class="custom-file">
@@ -43,7 +43,7 @@
                                 <div class="text-danger">{{ $message }}</div>
                                 @enderror
                             </div>
-                            <div class="form-group w-50">
+                            <div class="form-group w-75">
                                 <label for="exampleInputFile">Добавить главное изображение</label>
                                 <div class="input-group">
                                     <div class="custom-file">
@@ -58,7 +58,7 @@
                                 <div class="text-danger">{{ $message }}</div>
                                 @enderror
                             </div>
-                            <div class="form-group w-50">
+                            <div class="form-group w-75">
                                 <label>Выберите категорию</label>
                                 <select name="category_id" class="form-control">
                                     @foreach($categories as $category)
@@ -68,7 +68,7 @@
                                     @endforeach
                                 </select>
                             </div>
-                            <div class="form-group">
+                            <div class="form-group w-75">
                                 <label>Тэги</label>
                                 <select class="select2" multiple="multiple"
                                         style="width: 100%;"

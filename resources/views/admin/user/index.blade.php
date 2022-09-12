@@ -19,12 +19,12 @@
             <div class="container-fluid">
                 <!-- Small boxes (Stat box) -->
                 <div class="row">
-                    <div class="col-1 mb-3">
+                    <div class="ml-2 mb-3">
                         <a href="{{ route('admin.user.create') }}" class="btn btn-block btn-primary">Добавить</a>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-6">
+                    <div class="w-75">
                         <div class="card">
                             <div class="card-body table-responsive p-0">
                                 <table class="table table-hover text-nowrap">

@@ -24,7 +24,7 @@
                               enctype="multipart/form-data">
                             @csrf
                             @method('PATCH')
-                            <div class="form-group w-25">
+                            <div class="form-group w-50">
                                 <input type="text" class="form-control" name="title" placeholder="Название поста"
                                        required value="{{ $post->title }}">
                             </div>

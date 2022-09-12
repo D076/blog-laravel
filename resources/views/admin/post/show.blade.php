@@ -27,18 +27,22 @@
             <div class="container-fluid">
                 <!-- Small boxes (Stat box) -->
                 <div class="row">
-                    <div class="col-6">
+                    <div class="col-9">
                         <div class="card">
                             <div class="card-body table-responsive p-0">
                                 <table class="table table-hover text-nowrap">
                                     <tbody>
                                         <tr>
                                             <td>ID</td>
-                                            <td>{{$post->id}}</td>
+                                            <td>{{ $post->id }}</td>
                                         </tr>
                                         <tr>
                                             <td>Название</td>
-                                            <td>{{$post->title}}</td>
+                                            <td>{{ $post->title }}</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Содержание</td>
+                                            <td>{{ $post->content }}</td>
                                         </tr>
                                     </tbody>
                                 </table>
