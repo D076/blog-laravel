@@ -15,4 +15,5 @@ php artisan migrate
 ```bash
 php artisan serve
 ```
-Admin panel on url http://localhost:8000/admin
+
+To access the admin panel register new user and change on "User" table in your db field "role" to "0".
