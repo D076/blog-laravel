@@ -11,6 +11,7 @@ class ShowController extends Controller
     public function __invoke(Post $post)
     {
         $date = Carbon::parse($post->created_at)->translatedFormat('d F Y • H:i');
+        // Собираем 3 поста с такой же категорией, кроме основного
         $relatedPosts = Post::where('category_id', $post->category_id)
             ->where('id', '!=', $post->id)
             ->get()
